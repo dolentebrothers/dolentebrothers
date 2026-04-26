@@ -34,7 +34,7 @@ nav a:hover{color:var(--white);}
 .mob-menu a{font-family:var(--display);font-size:36px;letter-spacing:3px;color:var(--white);text-decoration:none;padding:12px 0;border-bottom:1px solid var(--border);}
 .mob-close{position:absolute;top:28px;right:32px;font-size:28px;color:var(--muted);cursor:pointer;background:none;border:none;}
 .hero{position:relative;height:92vh;min-height:600px;overflow:hidden;display:flex;align-items:flex-end;}
-.hero-bg{position:absolute;inset:0;background-image:url('/dolentebrothers/IMG_0326.jpg');background-size:cover;background-position:center 40%;filter:brightness(0.45);transition:filter 0.3s;}
+.hero-bg{position:absolute;inset:0;background-image:url('IMG_0326.jpg');background-size:cover;background-position:center 40%;filter:brightness(0.45);transition:filter 0.3s;}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(8,8,8,0.2) 0%,rgba(8,8,8,0.1) 40%,rgba(8,8,8,0.85) 100%);}
 .hero-content{position:relative;z-index:2;padding:0 52px 72px;width:100%;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:32px;}
 .hero-left{max-width:680px;}
@@ -149,6 +149,7 @@ nav a:hover{color:var(--white);}
 .f-group select option{background:var(--panel);}
 .f-btn{width:100%;background:var(--red);color:white;border:none;cursor:pointer;font-family:var(--cond);font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase;padding:17px 32px;margin-top:4px;display:flex;align-items:center;justify-content:center;gap:10px;transition:background 0.2s,transform 0.2s;}
 .f-btn:hover{background:var(--red2);transform:translateY(-2px);}
+.f-btn:disabled{opacity:0.6;cursor:not-allowed;transform:none;}
 .f-ok{display:none;background:rgba(212,43,43,0.1);border:1px solid var(--red);color:var(--white);padding:18px 22px;margin-top:12px;font-size:14px;line-height:1.7;}
 footer{background:var(--deep);border-top:1px solid var(--border);padding:60px 52px 28px;}
 .ft{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:56px;max-width:1160px;margin:0 auto 44px;padding-bottom:44px;border-bottom:1px solid var(--border);}
@@ -196,7 +197,7 @@ header{padding:0 24px;}nav{display:none;}.burger{display:flex;}
 
 <header>
   <a href="#" class="logo">
-    <img src="/dolentebrothers/outdoor-restoration.png" alt="Dolente Brothers Outdoor Restoration">
+    <img src="outdoor-restoration.png" alt="Dolente Brothers Outdoor Restoration">
   </a>
   <nav>
     <a href="#services">Services</a>
@@ -249,7 +250,9 @@ header{padding:0 24px;}nav{display:none;}.burger{display:flex;}
     <span>Pressure Washing</span><span>◆</span><span>Exterior Painting</span><span>◆</span><span>Deck Restoration</span><span>◆</span><span>Wood Staining</span><span>◆</span><span>Window Cleaning</span><span>◆</span><span>Gutter Cleaning</span><span>◆</span><span>Roof Washing</span><span>◆</span><span>Fence Restoration</span><span>◆</span><span>Full Transformations</span><span>◆</span><span>East Texas</span><span>◆</span>
     <span>Pressure Washing</span><span>◆</span><span>Exterior Painting</span><span>◆</span><span>Deck Restoration</span><span>◆</span><span>Wood Staining</span><span>◆</span><span>Window Cleaning</span><span>◆</span><span>Gutter Cleaning</span><span>◆</span><span>Roof Washing</span><span>◆</span><span>Fence Restoration</span><span>◆</span><span>Full Transformations</span><span>◆</span><span>East Texas</span><span>◆</span>
   </div>
-</div><section class="services" id="services">
+</div>
+
+<section class="services" id="services">
   <div class="services-inner">
     <div class="eyebrow sr">What We Do</div>
     <h2 class="sec-title sr">Every outdoor service.<br><em>One company.</em></h2>
@@ -307,48 +310,50 @@ header{padding:0 24px;}nav{display:none;}.burger{display:flex;}
     <h2 class="sec-title sr">Real projects.<br><em>Real results.</em></h2>
     <div class="port-grid">
       <div class="port-item tall sr">
-        <img src="/dolentebrothers/IMG_0326.jpg" alt="Dock walkway staining East Texas" loading="lazy">
+        <img src="IMG_0326.jpg" alt="Dock walkway staining East Texas" loading="lazy">
         <div class="port-overlay"><span class="port-tag">Staining & Finishing · East Texas</span></div>
       </div>
       <div class="port-item sr d1">
-        <img src="/dolentebrothers/IMG_0327.jpg" alt="Completed dock staining" loading="lazy">
+        <img src="IMG_0327.jpg" alt="Completed dock staining" loading="lazy">
         <div class="port-overlay"><span class="port-tag">Wood Staining</span></div>
       </div>
       <div class="port-item sr d2">
-        <img src="/dolentebrothers/IMG_0400.jpg" alt="Storage building exterior" loading="lazy">
+        <img src="IMG_0400.jpg" alt="Storage building exterior" loading="lazy">
         <div class="port-overlay"><span class="port-tag">Exterior Build & Paint</span></div>
       </div>
       <div class="port-item sr">
-        <img src="/dolentebrothers/IMG_0336.jpg" alt="Covered dock staining" loading="lazy">
+        <img src="IMG_0336.jpg" alt="Covered dock staining" loading="lazy">
         <div class="port-overlay"><span class="port-tag">Structural Staining</span></div>
       </div>
       <div class="port-item wide sr d1">
-        <img src="/dolentebrothers/IMG_0364.jpg" alt="Dock restoration work" loading="lazy">
+        <img src="IMG_0364.jpg" alt="Dock restoration work" loading="lazy">
         <div class="port-overlay"><span class="port-tag">Dock Restoration</span></div>
       </div>
       <div class="port-item sr">
-        <img src="/dolentebrothers/IMG_0368.jpg" alt="Composite decking" loading="lazy">
+        <img src="IMG_0368.jpg" alt="Composite decking" loading="lazy">
         <div class="port-overlay"><span class="port-tag">Deck Finishing</span></div>
       </div>
       <div class="port-item sr d1">
-        <img src="/dolentebrothers/IMG_0369.jpg" alt="Wood staining prep" loading="lazy">
+        <img src="IMG_0369.jpg" alt="Wood staining prep" loading="lazy">
         <div class="port-overlay"><span class="port-tag">Wood Staining</span></div>
       </div>
       <div class="port-item sr d2">
-        <img src="/dolentebrothers/IMG_0371.jpg" alt="Lumber staining" loading="lazy">
+        <img src="IMG_0371.jpg" alt="Lumber staining" loading="lazy">
         <div class="port-overlay"><span class="port-tag">Stain & Prep</span></div>
       </div>
       <div class="port-item wide sr">
-        <img src="/dolentebrothers/IMG_0240.jpg" alt="Waterfront restoration" loading="lazy">
+        <img src="IMG_0240.jpg" alt="Waterfront restoration" loading="lazy">
         <div class="port-overlay"><span class="port-tag">Waterfront Restoration</span></div>
       </div>
       <div class="port-item sr d1">
-        <img src="/dolentebrothers/IMG_0399.jpg" alt="Dock build in progress" loading="lazy">
+        <img src="IMG_0399.jpg" alt="Dock build in progress" loading="lazy">
         <div class="port-overlay"><span class="port-tag">Dock Construction</span></div>
       </div>
     </div>
   </div>
-</section><section class="about" id="about">
+</section>
+
+<section class="about" id="about">
   <div class="about-inner">
     <div class="about-left">
       <div class="eyebrow sr">About Us</div>
@@ -358,7 +363,7 @@ header{padding:0 24px;}nav{display:none;}.burger{display:flex;}
     </div>
     <div class="sr d1">
       <div class="about-photo">
-        <img src="/dolentebrothers/IMG_0399.jpg" alt="Dock build in progress East Texas">
+        <img src="IMG_0399.jpg" alt="Dock build in progress East Texas">
         <div class="about-photo-badge">
           <div class="n">Est.</div>
           <div class="l">2026 · East Texas</div>
@@ -414,43 +419,44 @@ header{padding:0 24px;}nav{display:none;}.burger{display:flex;}
         <div class="c-line"><div class="c-icon">✅</div><div><div class="c-lbl">Estimates</div><div class="c-val">Always Free · No Obligation</div></div></div>
       </div>
     </div>
-    <form class="q-form sr d1" name="contact" method="POST" data-netlify="true">
-<input type="hidden" name="form-name" value="contact">
+    <div class="q-form sr d1">
       <h3>FREE QUOTE</h3>
       <p class="q-sub">Describe your project. We'll get back to you today.</p>
-      <div class="f-fields">
-        <div class="f-row">
-          <div class="f-group"><label>First Name</label><input type="text" placeholder="John" id="fn" name="first-name"></div>
-          <div class="f-group"><label>Last Name</label><input type="text" placeholder="Smith" id="ln" name="last-name"></div>
+      <form id="quoteForm" action="https://formspree.io/f/xbdqerkr" method="POST">
+        <div class="f-fields">
+          <div class="f-row">
+            <div class="f-group"><label>First Name</label><input type="text" name="first-name" placeholder="John" required></div>
+            <div class="f-group"><label>Last Name</label><input type="text" name="last-name" placeholder="Smith"></div>
+          </div>
+          <div class="f-row">
+            <div class="f-group"><label>Phone</label><input type="tel" name="phone" placeholder="(903) 000-0000" required></div>
+            <div class="f-group"><label>City</label><input type="text" name="city" placeholder="Grand Saline"></div>
+          </div>
+          <div class="f-group">
+            <label>Service Needed</label>
+            <select name="service" required>
+              <option value="">What do you need done?</option>
+              <option>Pressure Washing</option>
+              <option>Exterior Painting</option>
+              <option>Deck / Wood Restoration & Staining</option>
+              <option>Fence Restoration or Build</option>
+              <option>Deck Board Replacement / Repair</option>
+              <option>Dock Restoration & Staining</option>
+              <option>Window Cleaning</option>
+              <option>Gutter Cleaning</option>
+              <option>Roof Washing</option>
+              <option>Full Outdoor Transformation</option>
+              <option>Multiple Services</option>
+            </select>
+          </div>
+          <div class="f-group">
+            <label>Project Details</label>
+            <textarea name="details" placeholder="Describe the job — surface type, size, condition, what you're looking for."></textarea>
+          </div>
+          <button type="submit" class="f-btn" id="submitBtn">Send Quote Request</button>
+          <div class="f-ok" id="fOk">✓ Received — we'll be in touch with you today. Dolente Brothers appreciates your business.</div>
         </div>
-        <div class="f-row">
-          <div class="f-group"><label>Phone</label><input type="tel" placeholder="(903) 000-0000" id="ph" name="phone"></div>
-          <div class="f-group"><label>City</label><input type="text" placeholder="Grand Saline"></div>
-        </div>
-        <div class="f-group">
-          <label>Service Needed</label>
-          <select id="svc" name="service">
-            <option value="">What do you need done?</option>
-            <option>Pressure Washing</option>
-            <option>Exterior Painting</option>
-            <option>Deck / Wood Restoration & Staining</option>
-            <option>Fence Restoration or Build</option>
-            <option>Deck Board Replacement / Repair</option>
-            <option>Dock Restoration & Staining</option>
-            <option>Window Cleaning</option>
-            <option>Gutter Cleaning</option>
-            <option>Roof Washing</option>
-            <option>Full Outdoor Transformation</option>
-            <option>Multiple Services</option>
-          </select>
-        </div>
-        <div class="f-group">
-          <label>Project Details</label>
-          <textarea placeholder="Describe the job — surface type, size, condition, what you're looking for." id="det"></textarea>
-        </div>
-        <button class="f-btn" onclick="submitForm()">Send Quote Request</button>
-        <div class="f-ok" id="fOk">✓ Received — we'll be in touch with you today. Dolente Brothers appreciates your business.</form>
-      </div>
+      </form>
     </div>
   </div>
 </section>
@@ -481,7 +487,7 @@ header{padding:0 24px;}nav{display:none;}.burger{display:flex;}
         <li><a href="#process">How It Works</a></li>
         <li><a href="#quote">Free Quote</a></li>
         <li><a href="tel:4303228772">(430) 322-8772</a></li>
-        <li><a href="http://dolentebrothers.com">dolentebrothers.com</a></li>
+        <li><a href="https://dolentebrothers.com">dolentebrothers.com</a></li>
       </ul>
     </div>
   </div>
@@ -496,11 +502,34 @@ function openMenu(){document.getElementById('mobMenu').classList.add('open');doc
 function closeMenu(){document.getElementById('mobMenu').classList.remove('open');document.body.style.overflow='';}
 const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('v');obs.unobserve(x.target);}});},{threshold:0.08});
 document.querySelectorAll('.sr').forEach(el=>obs.observe(el));
-function submitForm(){
-  if(!document.getElementById('fn').value||!document.getElementById('ph').value||!document.getElementById('svc').value){alert('Please fill in your name, phone, and service needed.');return;}
-  document.querySelector('.f-btn').style.display='none';
-  document.getElementById('fOk').style.display='block';
-}
+
+// Formspree AJAX submission
+document.getElementById('quoteForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const btn = document.getElementById('submitBtn');
+  const ok = document.getElementById('fOk');
+  btn.disabled = true;
+  btn.textContent = 'Sending...';
+  fetch('https://formspree.io/f/xbdqerkr', {
+    method: 'POST',
+    body: new FormData(this),
+    headers: { 'Accept': 'application/json' }
+  }).then(function(res) {
+    if (res.ok) {
+      btn.style.display = 'none';
+      ok.style.display = 'block';
+      document.getElementById('quoteForm').reset();
+    } else {
+      btn.disabled = false;
+      btn.textContent = 'Send Quote Request';
+      alert('Something went wrong. Please call us at (430) 322-8772.');
+    }
+  }).catch(function() {
+    btn.disabled = false;
+    btn.textContent = 'Send Quote Request';
+    alert('Something went wrong. Please call us at (430) 322-8772.');
+  });
+});
 </script>
 </body>
 </html>
