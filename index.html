@@ -17,23 +17,24 @@ html{scroll-behavior:smooth;}
 --body:'Barlow',sans-serif;
 }
 body{background:var(--black);color:var(--white);font-family:var(--body);font-weight:300;overflow-x:hidden;line-height:1.7;}
-.topbar{background:var(--red);padding:8px 52px;display:flex;justify-content:space-between;align-items:center;font-family:var(--cond);font-size:12px;font-weight:700;letter-spacing:1.5px;color:white;}
+.topbar{background:var(--red);padding:8px 24px;display:flex;justify-content:space-between;align-items:center;font-family:var(--cond);font-size:12px;font-weight:700;letter-spacing:1.5px;color:white;flex-wrap:nowrap;gap:8px;}
 .topbar a{color:white;text-decoration:none;}
-.topbar-phone{font-size:15px;letter-spacing:1px;}
-header{position:sticky;top:0;left:0;right:0;z-index:500;background:rgba(8,8,8,0.98);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;padding:0 52px;height:72px;}
+.topbar-left{font-size:11px;letter-spacing:1px;white-space:nowrap;}
+.topbar-right{display:flex;gap:16px;align-items:center;white-space:nowrap;font-size:13px;}
+header{position:sticky;top:0;left:0;right:0;z-index:500;background:#ffffff;backdrop-filter:blur(16px);border-bottom:1px solid rgba(0,0,0,0.1);box-shadow:0 2px 12px rgba(0,0,0,0.08);display:flex;justify-content:space-between;align-items:center;padding:0 52px;height:72px;}
 .logo{text-decoration:none;display:flex;align-items:center;gap:16px;}
-.logo img{height:52px;width:auto;display:block;background:white;padding:4px 8px;border-radius:3px;}
+.logo img{height:52px;width:auto;display:block;padding:4px 8px;border-radius:3px;}
 nav{display:flex;align-items:center;gap:32px;}
-nav a{font-family:var(--cond);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(245,242,237,0.6);text-decoration:none;transition:color 0.2s;}
-nav a:hover{color:var(--white);}
+nav a{font-family:var(--cond);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(8,8,8,0.6);text-decoration:none;transition:color 0.2s;}
+nav a:hover{color:var(--black);}
 .nav-quote{background:var(--red)!important;color:white!important;padding:10px 22px;}
 .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;}
-.burger span{display:block;width:24px;height:1.5px;background:var(--white);}
+.burger span{display:block;width:24px;height:1.5px;background:var(--black);}
 .mob-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:var(--black);z-index:499;padding:100px 40px 40px;flex-direction:column;gap:8px;}
 .mob-menu.open{display:flex;}
 .mob-menu a{font-family:var(--display);font-size:36px;letter-spacing:3px;color:var(--white);text-decoration:none;padding:12px 0;border-bottom:1px solid var(--border);}
 .mob-close{position:absolute;top:28px;right:32px;font-size:28px;color:var(--muted);cursor:pointer;background:none;border:none;}
-.hero{position:relative;height:92vh;min-height:600px;overflow:hidden;display:flex;align-items:flex-end;}
+.hero{position:relative;height:92vh;min-height:640px;overflow:hidden;display:flex;align-items:center;padding-top:80px;}
 .hero-bg{position:absolute;inset:0;background-image:url('IMG_0326.jpg');background-size:cover;background-position:center 40%;filter:brightness(0.45);transition:filter 0.3s;}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(8,8,8,0.2) 0%,rgba(8,8,8,0.1) 40%,rgba(8,8,8,0.85) 100%);}
 .hero-content{position:relative;z-index:2;padding:0 52px 72px;width:100%;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:32px;}
@@ -183,15 +184,18 @@ header{padding:0 24px;}nav{display:none;}.burger{display:flex;}
 .f-row{grid-template-columns:1fr;}.q-form{padding:28px 20px;}
 .area-inner{flex-direction:column;align-items:flex-start;}
 .qbar{grid-template-columns:1fr 1fr;padding:16px 24px;}
+.topbar{padding:8px 16px;}
+.topbar-left{display:none;}
+.topbar-right{width:100%;justify-content:center;gap:20px;}
 }
 </style>
 </head><body>
 
 <div class="topbar">
-  <span>📍 East Texas · Van Zandt County · Free Estimates</span>
-  <span style="display:flex;gap:24px;align-items:center;opacity:0.85;">
+  <span class="topbar-left">📍 East Texas · Free Estimates</span>
+  <span class="topbar-right">
     <span>Mon–Sat 7AM–6PM</span>
-    <a href="tel:4303228772" style="font-size:15px;">📞 (430) 322-8772</a>
+    <a href="tel:4303228772">📞 (430) 322-8772</a>
   </span>
 </div>
 
@@ -414,6 +418,8 @@ header{padding:0 24px;}nav{display:none;}.burger{display:flex;}
       <p>Fill out the form or call us. We respond same day and come to you for a free on-site estimate. No obligation.</p>
       <div class="c-lines">
         <div class="c-line"><div class="c-icon">📞</div><div><div class="c-lbl">Call or Text</div><div class="c-val"><a href="tel:4303228772">(430) 322-8772</a></div></div></div>
+        <div class="c-line"><div class="c-icon">✉️</div><div><div class="c-lbl">Email</div><div class="c-val"><a href="mailto:dolentebrothers@gmail.com">dolentebrothers@gmail.com</a></div></div></div>
+        <div class="c-line"><div class="c-icon">📘</div><div><div class="c-lbl">Facebook</div><div class="c-val"><a href="https://www.facebook.com/people/Dolente-Brothers-Outdoor-Restoration/61576867742700/" target="_blank">Dolente Brothers Outdoor Restoration</a></div></div></div>
         <div class="c-line"><div class="c-icon">📍</div><div><div class="c-lbl">Service Area</div><div class="c-val">East Texas · Van Zandt County</div></div></div>
         <div class="c-line"><div class="c-icon">⚡</div><div><div class="c-lbl">Response Time</div><div class="c-val">Same Day · Usually Within Hours</div></div></div>
         <div class="c-line"><div class="c-icon">✅</div><div><div class="c-lbl">Estimates</div><div class="c-val">Always Free · No Obligation</div></div></div>
@@ -487,6 +493,8 @@ header{padding:0 24px;}nav{display:none;}.burger{display:flex;}
         <li><a href="#process">How It Works</a></li>
         <li><a href="#quote">Free Quote</a></li>
         <li><a href="tel:4303228772">(430) 322-8772</a></li>
+        <li><a href="mailto:dolentebrothers@gmail.com">dolentebrothers@gmail.com</a></li>
+        <li><a href="https://www.facebook.com/people/Dolente-Brothers-Outdoor-Restoration/61576867742700/" target="_blank">Facebook</a></li>
         <li><a href="https://dolentebrothers.com">dolentebrothers.com</a></li>
       </ul>
     </div>
